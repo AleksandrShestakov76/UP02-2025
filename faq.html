@@ -1,0 +1,247 @@
+<html>
+<head>
+    <title>Вопросы и ответы | Платформа "Фокус"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Основные стили */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        nav {
+            background-color: #34495e;
+            color: white;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-menu li {
+            position: relative;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+        }
+        
+        .nav-menu a:hover {
+            background-color: #2c3e50;
+        }
+        
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #34495e;
+            min-width: 200px;
+            z-index: 1;
+        }
+        
+        .nav-menu li:hover .submenu {
+            display: block;
+        }
+        
+        main {
+            display: flex;
+            flex: 1;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 2rem;
+        }
+        
+        /* Стили для FAQ с чекбоксами */
+        .faq-title {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ecf0f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-checkbox {
+            display: none;
+        }
+        
+        .faq-checkbox:checked + .faq-question:after {
+            content: '-';
+        }
+        
+        .faq-answer {
+            padding: 0 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-checkbox:checked ~ .faq-answer {
+            padding: 1rem;
+            max-height: 500px;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+            }
+            
+            .submenu {
+                position: static;
+            }
+        }
+
+        /* Стили кнопок */
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип платформы">
+            <h1>Платформа адаптивного микрообучения "Фокус"</h1>
+        </div>
+        <div id="auth-buttons">
+            <a href="login.html"><button>Вход</button></a>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li>
+                <a href="about.html">О платформе</a>
+                <ul class="submenu">
+                    <li><a href="staff.html">Сотрудники</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="catalog.html">Доступные курсы</a>
+            </li>
+            <li><a href="pricing.html">Тарифный план</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="dogovor.html">Типовой договор</a></li>
+            <li><a href="sitemap.html">Карта сайта</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="content">
+            <h2 class="faq-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq1" class="faq-checkbox">
+                <label for="faq1" class="faq-question">Как начать обучение на платформе?</label>
+                <div class="faq-answer">
+                    <p>Для начала обучения просто зарегистрируйтесь на платформе, выберите интересующий курс и начните изучение материалов. Все курсы доступны сразу после регистрации.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq2" class="faq-checkbox">
+                <label for="faq2" class="faq-question">Какие способы оплаты существуют?</label>
+                <div class="faq-answer">
+                    <p>Мы принимаем банковские карты, электронные кошельки и другие популярные способы оплаты. Полный список доступен в разделе "Оплата".</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq3" class="faq-checkbox">
+                <label for="faq3" class="faq-question">Как работает микрообучение?</label>
+                <div class="faq-answer">
+                    <p>Микрообучение разбивает материал на небольшие модули по 5-15 минут, что позволяет эффективно усваивать информацию без перегрузки.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Платформа микрообучения "Фокус". Все права защищены.</p>
+        <p>Контактная информация: alex10.shest@gmail.com | +7 (123) 456-78-90</p>
+        <p><a href="privacy.html">Политика конфиденциальности</a> | <a href="terms.html">Условия использования</a></p>
+    </footer>
+</body>
+</html>

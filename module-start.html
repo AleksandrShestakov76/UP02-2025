@@ -1,0 +1,370 @@
+<html>
+<head>
+    <title>Основы программирования - Теоретический модуль | Платформа "Фокус"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        
+        .module-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        
+        .module-header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+        
+        .module-header h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .module-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .progress-container {
+            height: 8px;
+            background: #ecf0f1;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            transition: width 0.3s ease;
+        }
+        
+        /* Стили для контента */
+        .content-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .content-section h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f1f1f1;
+        }
+        
+        .concept-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .concept-card h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .video-container {
+            margin: 2rem 0;
+            background: #f0f8ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .video-placeholder {
+            width: 100%;
+            height: 400px;
+            background: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        
+        .completion-section {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #e8f8f5;
+            border-radius: 8px;
+            border-top: 4px solid #27ae60;
+        }
+        
+        .completion-button {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 1rem;
+        }
+        
+        .completion-button:hover {
+            background: #219653;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="module-container">
+            <div class="module-header">
+                <h2>Основы программирования: Теоретический модуль</h2>
+                <div class="module-meta">
+                    <span><i class="far fa-clock"></i> 10-15 минут</span>
+                    <span><i class="fas fa-signal"></i> Начальный уровень</span>
+                    <span>Модуль 1 из 1</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+            </div>
+            
+            <div class="module-content">
+                <div class="content-section">
+                    <h3>1. Основные концепции программирования</h3>
+                    
+                    <div class="concept-card">
+                        <h4>Сущность программирования</h4>
+                        <p>Программирование представляет собой процесс создания точных инструкций для компьютера с использованием специализированных языков. Эти инструкции, называемые кодом, преобразуются в машинный язык (последовательность бинарных команд), который непосредственно исполняется процессором компьютера.</p>
+                        <p>Современное программирование включает несколько ключевых аспектов:</p>
+                        <ul>
+                            <li>Проектирование архитектуры программного обеспечения</li>
+                            <li>Написание исходного кода на выбранном языке программирования</li>
+                            <li>Тестирование и отладку созданного кода</li>
+                            <li>Оптимизацию производительности</li>
+                            <li>Поддержку и развитие существующих программных продуктов</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h4>Исторический экскурс</h4>
+                        <p>История программирования начинается задолго до появления первых электронных компьютеров. Первым программистом в истории считается Ада Лавлейс, которая в 1843 году разработала алгоритмы для аналитической машины Чарльза Бэббиджа. Эти алгоритмы по сути являлись первыми в мире компьютерными программами, хотя сама машина так и не была построена.</p>
+                        <p>Современная эра программирования началась в 1940-х годах с появлением первых электронных вычислительных машин. Первые программы писались непосредственно в машинных кодах, что было крайне трудоемким процессом. Развитие языков программирования высокого уровня в 1950-х (таких как Fortran и COBOL) значительно упростило процесс создания программ.</p>
+                    </div>
+                    
+     <div class="video-container">
+    <div class="video-embed">
+        
+      <iframe
+        width="720"
+        height="405"
+        src="https://rutube.ru/play/embed/0ca1596e8022eb02ddd590e70192522a"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        webkitAllowFullScreen
+        mozallowfullscreen
+        allowFullScreen
+      ></iframe>
+    
+    </div>
+    <p>Краткий обзор эволюции программирования от первых машинных кодов до современных языков</p>
+</div>
+                </div>
+                
+                <div class="content-section">
+                    <h3>2. Архитектура компьютера и ее значение</h3>
+                    
+                    <div class="concept-card">
+                        <h4>Основные компоненты вычислительной системы</h4>
+                        <p>Современный компьютер представляет собой сложную систему взаимодействующих компонентов:</p>
+                        <ol>
+                            <li><strong>Центральный процессор (CPU)</strong> - выполняет арифметические и логические операции, управляет работой всех компонентов системы.</li>
+                            <li><strong>Оперативная память (RAM)</strong> - временное хранилище данных и команд, с которыми процессор работает в текущий момент.</li>
+                            <li><strong>Постоянная память (HDD/SSD)</strong> - долговременное хранилище данных, сохраняющее информацию при отключении питания.</li>
+                            <li><strong>Устройства ввода/вывода</strong> - обеспечивают взаимодействие компьютера с внешним миром.</li>
+                            <li><strong>Системная шина</strong> - обеспечивает передачу данных между компонентами системы.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h4>Иерархия памяти</h4>
+                        <p>Компьютерные системы используют многоуровневую систему хранения данных, где каждый уровень отличается скоростью доступа, стоимостью хранения и объемом:</p>
+                        <ol>
+                            <li><strong>Регистры процессора</strong> - наиболее быстрый, но крайне ограниченный по объему вид памяти.</li>
+                            <li><strong>Кэш-память</strong> (L1, L2, L3) - быстрая память небольшого объема, расположенная непосредственно на процессоре.</li>
+                            <li><strong>Оперативная память (RAM)</strong> - обеспечивает быстрый доступ к данным, но требует постоянного питания.</li>
+                            <li><strong>Флэш-память (SSD)</strong> - значительно быстрее HDD, но дороже в пересчете на гигабайт.</li>
+                            <li><strong>Жесткие диски (HDD)</strong> - обеспечивают большое хранилище по низкой цене, но имеют механические ограничения скорости.</li>
+                            <li><strong>Облачные хранилища</strong> - практически неограниченный объем, но зависимость от интернет-соединения.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            
+      <iframe
+        width="800"
+        height="400"
+        src="https://rutube.ru/play/embed/517b2eb8c1513ead8c6a42ffd66e489f"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        webkitAllowFullScreen
+        mozallowfullscreen
+        allowFullScreen
+      ></iframe>
+    
+                        </div>
+                        <p>Наглядное объяснение архитектуры современных вычислительных систем</p>
+                    </div>
+                </div>
+                
+                <div class="content-section">
+                    <h3>3. Алгоритмы и их свойства</h3>
+                    
+                    <div class="concept-card">
+                        <h4>Понятие алгоритма</h4>
+                        <p>Алгоритм - это точно определенная последовательность действий, направленная на решение конкретной задачи. Алгоритмы являются фундаментальной основой программирования, так как любая программа по сути представляет собой реализацию одного или нескольких алгоритмов.</p>
+                        <p>Ключевые свойства хорошего алгоритма:</p>
+                        <ul>
+                            <li><strong>Дискретность</strong> - алгоритм состоит из отдельных, четко определенных шагов.</li>
+                            <li><strong>Определенность</strong> - каждый шаг алгоритма должен быть однозначно понятен.</li>
+                            <li><strong>Результативность</strong> - алгоритм должен приводить к конкретному результату.</li>
+                            <li><strong>Массовость</strong> - алгоритм должен быть применим к классу однотипных задач.</li>
+                            <li><strong>Конечность</strong> - алгоритм должен завершаться за конечное число шагов.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h4>Сложность алгоритмов</h4>
+                        <p>Одной из важнейших характеристик алгоритма является его сложность, которая оценивает зависимость количества операций от объема входных данных. В теории алгоритмов выделяют:</p>
+                        <ul>
+                            <li><strong>Временную сложность</strong> - количество операций, необходимых для решения задачи.</li>
+                            <li><strong>Пространственную сложность</strong> - объем памяти, требуемый для работы алгоритма.</li>
+                        </ul>
+                        <p>Сложность алгоритмов принято описывать с помощью "О-нотации", которая позволяет оценить рост ресурсоемкости алгоритма при увеличении объема входных данных. Наиболее распространенные классы сложности:</p>
+                        <ul>
+                            <li>O(1) - постоянное время выполнения</li>
+                            <li>O(log n) - логарифмическая сложность</li>
+                            <li>O(n) - линейная сложность</li>
+                            <li>O(n²) - квадратичная сложность</li>
+                            <li>O(2ⁿ) - экспоненциальная сложность</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-section">
+                    <h3>4. Языки программирования и их классификация</h3>
+                    
+                    <div class="concept-card">
+                        <h4>Эволюция языков программирования</h4>
+                        <p>Языки программирования прошли значительную эволюцию от машинных кодов первых компьютеров до современных высокоуровневых языков. Основные этапы развития:</p>
+                        <ol>
+                            <li><strong>Машинные коды</strong> (1940-е) - программы в виде двоичных последовательностей.</li>
+                            <li><strong>Ассемблеры</strong> (1950-е) - символическое представление машинных команд.</li>
+                            <li><strong>Языки высокого уровня</strong> (1950-1960-е) - Fortran, COBOL, ALGOL.</li>
+                            <li><strong>Структурное программирование</strong> (1970-е) - Pascal, C.</li>
+                            <li><strong>Объектно-ориентированные языки</strong> (1980-1990-е) - C++, Java, Python.</li>
+                            <li><strong>Современные мультипарадигмальные языки</strong> (2000-е - настоящее время) - Rust, Go, Swift.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h4>Классификация языков программирования</h4>
+                        <p>Языки программирования можно классифицировать по различным критериям:</p>
+                        <p><strong>По уровню абстракции:</strong></p>
+                        <ul>
+                            <li><strong>Низкого уровня</strong> (ассемблер, машинные коды) - близки к аппаратному обеспечению.</li>
+                            <li><strong>Высокого уровня</strong> (Python, Java, C#) - близки к человеческому языку.</li>
+                        </ul>
+                        <p><strong>По парадигме программирования:</strong></p>
+                        <ul>
+                            <li><strong>Императивные</strong> (C, Pascal) - описывают как решать задачу.</li>
+                            <li><strong>Декларативные</strong> (SQL, HTML) - описывают что нужно получить.</li>
+                            <li><strong>Объектно-ориентированные</strong> (Java, C++) - основаны на концепции объектов.</li>
+                            <li><strong>Функциональные</strong> (Haskell, Lisp) - используют математические функции.</li>
+                            <li><strong>Логические</strong> (Prolog) - основаны на формальной логике.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            
+      <iframe
+        width="800"
+        height="400"
+        src="https://rutube.ru/play/embed/41d71d498329ab61920f17411863a490"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        webkitAllowFullScreen
+        mozallowfullscreen
+        allowFullScreen
+      ></iframe>
+    
+                        </div>
+                        <p>Рекомендации по выбору языка для начинающих разработчиков</p>
+                    </div>
+                </div>
+                
+                <div class="content-section">
+                    <h3>5. Основные концепции разработки ПО</h3>
+                    
+                    <div class="concept-card">
+                        <h4>Жизненный цикл программного обеспечения</h4>
+                        <p>Создание программного продукта - сложный процесс, который включает несколько этапов:</p>
+                        <ol>
+                            <li><strong>Анализ требований</strong> - определение функциональных и нефункциональных требований.</li>
+                            <li><strong>Проектирование</strong> - создание архитектуры системы.</li>
+                            <li><strong>Реализация</strong> - написание исходного кода.</li>
+                            <li><strong>Тестирование</strong> - проверка корректности работы.</li>
+                            <li><strong>Внедрение</strong> - развертывание системы у пользователей.</li>
+                            <li><strong>Сопровождение</strong> - исправление ошибок и доработка функционала.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="concept-card">
+                        <h4>Принципы качественного кода</h4>
+                        <p>Создание качественного программного обеспечения требует соблюдения ряда принципов:</p>
+                        <ul>
+                            <li><strong>KISS (Keep It Simple, Stupid)</strong> - простота реализации.</li>
+                            <li><strong>DRY (Don't Repeat Yourself)</strong> - избегание дублирования кода.</li>
+                            <li><strong>YAGNI (You Aren't Gonna Need It)</strong> - реализация только необходимого функционала.</li>
+                            <li><strong>SOLID</strong> - пять принципов объектно-ориентированного проектирования.</li>
+                            <li><strong>Читаемость кода</strong> - понятные имена переменных, комментарии, форматирование.</li>
+                            <li><strong>Модульность</strong> - разделение кода на логические блоки.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="completion-section">
+                    <h3>Завершение модуля</h3>
+                    <p>Вы успешно изучили теоретические основы программирования. Этот материал составляет фундамент для дальнейшего изучения конкретных языков программирования и технологий.</p>
+                    <p>Для продолжения обучения перейдите к следующему модулю, где мы рассмотрим практические аспекты программирования на примере конкретного языка.</p>
+                    <button class="completion-button">
+                        <a href="catalog.html" class="completion-button">
+                        Завершить модуль <i class="fas fa-check-circle"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Обработчик для кнопки завершения модуля
+        document.querySelector('.completion-button').addEventListener('click', function() {
+            alert('Модуль успешно завершен! Результаты сохранены.');
+            // В реальном приложении здесь была бы логика завершения модуля
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<html>
+<head>
+    <title>Основы программирования | Платформа "Фокус"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .course-hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .course-hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .course-hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .module-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .module-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .module-icon {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .module-content h3 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 1.5rem;
+        }
+        
+        .module-meta {
+            display: flex;
+            margin: 1rem 0;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            margin-right: 1.5rem;
+            color: #666;
+        }
+        
+        .meta-item i {
+            margin-right: 0.5rem;
+            color: #3498db;
+        }
+        
+        .start-btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .start-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .learning-benefits {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип платформы">
+            <h1>Платформа адаптивного микрообучения "Фокус"</h1>
+        </div>
+        <div id="auth-buttons">
+            <a href="login.html"><button>Вход</button></a>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li>
+                <a href="about.html">О платформе</a>
+                <ul class="submenu">
+                    <li><a href="staff.html">Сотрудники</a></li>
+                </ul>
+            </li>
+            <li><a href="catalog.html">Доступные курсы</a></li>
+            <li><a href="pricing.html">Тарифный план</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="dogovor.html">Типовой договор</a></li>
+            <li><a href="sitemap.html">Карта сайта</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="content">
+            <div class="course-hero">
+                <h2>Введение в программирование</h2>
+                <p>Ваш первый шаг в мир IT. Освойте базовые концепции программирования всего за 15 минут.</p>
+                <a href="#module" class="start-btn">Начать обучение</a>
+            </div>
+            
+            <div class="learning-benefits">
+                <h3>Что вы узнаете:</h3>
+                <ul>
+                    <li>Основные принципы работы компьютеров и программ</li>
+                    <li>Что такое алгоритмы и как они работают</li>
+                    <li>Обзор популярных языков программирования</li>
+                    <li>Как начать писать свой первый код</li>
+                </ul>
+            </div>
+            
+            <div id="module" class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="module-content">
+                        <h3>Введение в программирование</h3>
+                        <div class="module-meta">
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <span>15 минут</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Начальный уровень</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="module-description">
+                    <p>Этот модуль познакомит вас с фундаментальными концепциями программирования. Вы узнаете, как компьютеры выполняют команды, что такое алгоритмы и как они помогают решать задачи. Мы рассмотрим основные типы языков программирования и их применение.</p>
+                    
+                    <h4>Содержание модуля:</h4>
+                    <ol>
+                        <li>Как работают компьютеры</li>
+                        <li>Понятие алгоритма</li>
+                        <li>Языки программирования и их виды</li>
+                        <li>Простейшие программы</li>
+                        <li>Практическое задание</li>
+                    </ol>
+                </div>
+                
+                <a href="module-start.html" class="start-btn">Начать модуль <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="registration-promo">
+                <h3>Хотите продолжить обучение?</h3>
+                <p>Зарегистрируйтесь, чтобы получить доступ к полному курсу "Основы программирования" и другим материалам платформы.</p>
+                <a href="register.html"><button>Зарегистрироваться</button></a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Платформа микрообучения "Фокус". Все права защищены.</p>
+        <p>Контактная информация: alex10.shest@gmail.com | +7 (123) 456-78-90</p>
+        <p><a href="privacy.html">Политика конфиденциальности</a> | <a href="terms.html">Условия использования</a></p>
+    </footer>
+</body>
+</html>
